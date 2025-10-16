@@ -1,5 +1,7 @@
 name: uvExample
-
+on:
+  schedule:
+    - cron:  '5 4 * * 4' # At 04:05 on every Thursday
 jobs:
   uv-example:
     name: python

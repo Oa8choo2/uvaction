@@ -35,13 +35,18 @@ jobs:
           cd ./tmp
           pwd
           ls -al
+          echo "-------------"
           echo "HOME is ${HOME}"
           cd "${HOME}"
           pwd
           ls -al
+          echo "-------------"
           cd /home/runner/work
           pwd
           ls -al
+          echo "-------------"
+          ls -al /home/runner/work/uvaction
+          ls -al /home/runner/work/_temp
 
       - name: mkdocsv
         run: mkdocs --verbose --version

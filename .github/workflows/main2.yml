@@ -28,7 +28,7 @@ jobs:
         run: uv python install
 
       - name: deps
-        run: uv lock --verbose
+        run: uv sync --verbose
 
       - name: check
         run: |

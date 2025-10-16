@@ -18,5 +18,9 @@ jobs:
         run: uv python install
 
       - name: deps
-        run: uv lock --upgrade
+        # run: uv lock --upgrade
+        run: uv add --reinstall
+
+      - name: mkdocsv  
+        run: mkdocs --verbose --version
 

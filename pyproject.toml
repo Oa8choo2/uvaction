@@ -1,0 +1,17 @@
+# pyproject.toml 
+[project]
+name = "rmme"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "mkdocs>=1.6.1",
+    "mkdocs-autorefs>=1.4.3",
+    "mkdocs-exclude-search>=0.6.6",
+    "mkdocs-macros-plugin>=1.4.0",
+    "mkdocs-material>=9.6.21",
+    "mkdocs-section-index>=0.3.10",
+    "pymdown-extensions>=10.16.1",
+    "ruff>=0.14.0",
+]

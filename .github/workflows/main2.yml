@@ -24,6 +24,11 @@ jobs:
       - name: Install uv
         uses: astral-sh/setup-uv@v6
 
+      - name: venv
+        run: | 
+          uv venv
+          source .venv/bin/activate
+
       - name: Set up Python
         run: uv python install
 
@@ -47,6 +52,7 @@ jobs:
           echo "-------------"
           ls -al /home/runner/work/uvaction
           ls -al /home/runner/work/_temp
+          ls -al /home/runner/work/uvaction/.venv/bin
 
       - name: mkdocsv
         run: mkdocs --verbose --version

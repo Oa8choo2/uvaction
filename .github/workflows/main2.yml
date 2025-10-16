@@ -30,6 +30,19 @@ jobs:
       - name: deps
         run: uv lock --verbose
 
+      - name: check
+        run: |
+          cd ./tmp
+          pwd
+          ls -al
+          echo "HOME is ${HOME}"
+          cd "${HOME}"
+          pwd
+          ls -al
+          cd /home/runner/work
+          pwd
+          ls -al
+
       - name: mkdocsv
         run: mkdocs --verbose --version
 
